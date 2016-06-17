@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'haml', '~> 4.0.7'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'paperclip', '~> 4.3.6'
 
 group :development, :test do
   gem 'byebug'
