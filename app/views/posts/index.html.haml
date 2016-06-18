@@ -1,22 +1,5 @@
 %h1 PhotoBook
 
-%nav.navbar.navbar-default
-  .navbar-container
-    .navbar-header
-      %button.navbar-toggle.collapsed{"data-target" => "#bs-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
-        %span.sr-only Toggle Navigation
-        %span.icon-bar
-        %span.icon-bar
-      .navbar-brand= link_to "Photogram", root_path
-    .collapse.navbar-collapse#bs-navbar-collapse-1
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          = link_to "New Post", new_post_path
-        %li
-          = link_to "Login", '#'
-        %li
-          = link_to "Register", '#'
-
 .posts-wrapper.row
   -@posts.each do |post|
     .post
@@ -24,6 +7,9 @@
         .name
           KosMax
       .image.center-block
+        -# =image_tag @post.image.url(:medium)
         =link_to (image_tag post.image.url(:medium), class:'img-responsive'), post_path(post)
       %p.caption
         =post.caption
+      .text-center
+        =link_to "Cancel", posts_path
