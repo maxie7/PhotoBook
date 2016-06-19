@@ -23,12 +23,18 @@ html {
 
 body {
   height: 100%;
-  background-color: #ffe6ff;
+  background-color: #f5e6ff;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 .alert {
   margin-bottom: 0px;
+}
+
+.btn, .btn-lg, .btn-info, .btn-block {
+  color: #5c0099;
+  background-color: #c6ffb3;
+  border-color: #c6ffb3;
 }
 
 /* ## NAVBAR CUSTOMISATIONS ## */
@@ -39,14 +45,14 @@ body {
 
 .navbar-brand {
   a {
-    color: #125688;
+    color: #5c0099;
   }
 }
 
 .navbar-default {
   background-color: #c6ffb3;
   .navbar-nav li a {
-    color: #125688;
+    color: #5c0099;
   }
 }
 
@@ -192,6 +198,9 @@ body {
 .panel-heading{
   h1 {
     text-align: center;
+  }
+  h2 {
+    color: #5c0099;
   }
 }
 
