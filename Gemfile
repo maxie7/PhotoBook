@@ -17,12 +17,16 @@ gem 'simple_form', '~> 3.2.1'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'kaminari', '~> 0.16.3'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'byebug'
-end
-
-group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+
+  gem 'capybara', '~> 2.4.4'
+  gem 'rspec-rails', '~> 3.3.0'
+  gem 'factory_girl_rails'
 end
