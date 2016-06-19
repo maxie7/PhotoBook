@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 gem 'rails', '4.2.6'
-gem 'sqlite3'
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -24,6 +24,7 @@ gem 'jquery-turbolinks'
 gem 'web-console', group: :development
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug'
   # gem 'web-console', '~> 2.0'
   gem 'spring'
@@ -31,4 +32,9 @@ group :development, :test do
   gem 'capybara', '~> 2.4.4'
   gem 'rspec-rails', '~> 3.3.0'
   gem 'factory_girl_rails'
+end
+
+group :production do
+  gem 'pg', '~> 0.18.4'
+  gem 'rails_12factor'
 end
