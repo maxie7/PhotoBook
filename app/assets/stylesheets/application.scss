@@ -23,7 +23,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #fafafa;
+  background-color: #ffe6ff;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #c6ffb3;
   .navbar-nav li a {
     color: #125688;
   }
@@ -65,7 +65,7 @@ body {
 }
 
 .post {
-  background-color: #fff;
+  background-color: #c6ffb3;
   border-color: #edeeee;
   border-style: solid;
   border-radius: 3px;
@@ -302,6 +302,7 @@ body {
 
 .notification-dropdown {
   margin-top: 10px;
+  // background-color: 8cff66;
   button {
     border: none;
   }
