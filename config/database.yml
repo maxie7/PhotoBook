@@ -23,7 +23,5 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: production1
+  database: photobook1
   pool: 5
-  username: photobook
-  password: <%= ENV["SECRET_KEY_BASE"] %>
